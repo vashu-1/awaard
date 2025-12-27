@@ -1,0 +1,634 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(18, 20, 22);
+  color: #fff;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+/* Nav Css */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99999;
+  top: 0%;
+  left: 0%;
+  position: fixed;
+  width: 100%;
+  background-color: #0e10124a;
+  opacity: 1;
+  padding: 19px 3.6vw;
+  backdrop-filter: blur(16px);
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.nav-left > button {
+  cursor: pointer;
+}
+
+.nav-middle {
+  fill: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.nav-right > button {
+  cursor: pointer;
+}
+
+/* Page One CSS */
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 40px;
+}
+.pageone {
+  position: relative;
+}
+.pageone > .videoinside {
+  width: 100%;
+  height: 100%;
+  padding: 70px;
+  position: relative;
+  transform-origin: 50% 100%;
+}
+.pageone > .videoinside > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 35px;
+}
+.videoinside-overlay {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.videoinside-overlay > .elem > h1 {
+  font-size: 5.625vw;
+  color: #fff;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1;
+}
+.elem {
+  overflow: hidden;
+}
+/* Page Two Css */
+.pagetwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pagetwo > .text > h1 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 4.16vw;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+}
+.pagetwo > p {
+  font-size: 16px;
+  font-family: "poppins", sans-serif;
+  text-align: center;
+  width: 40%;
+  line-height: 1.7;
+}
+.image {
+  transition: all 1s ease;
+}
+.image:hover {
+  cursor: none;
+}
+.imageone,
+.imagetwo {
+  width: 65px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0px 12px;
+}
+.imagethree {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 12px;
+}
+.button {
+  font-family: "poppins", sans-serif;
+  font-size: 11px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  height: 32px;
+  padding: 3px 12px 2px;
+  border-radius: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.074);
+}
+#switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  fill: #fff;
+}
+/*   PageThreeCss    */
+.pagethree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 13vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.pagethree > h3 {
+  font-family: "poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+}
+.pagethree > h3 > svg {
+  margin: 0px 25px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+}
+.pagethree > .content > h1 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 5.104vw;
+  font-weight: 400;
+  text-align: center;
+}
+.imageleft {
+  position: absolute;
+  width: 31.25vw;
+  height: 80%;
+  object-fit: cover;
+  z-index: 154;
+  left: -2%;
+  rotate: -4deg;
+  border-radius: 35px;
+}
+.imageright {
+  position: absolute;
+  width: 31.25vw;
+  height: 80%;
+  object-fit: cover;
+  z-index: 152;
+  right: -2%;
+  rotate: 4deg;
+  border-radius: 35px;
+}
+
+/* Page 4 CSS */
+
+.pagefour {
+  width: 100vw;
+  padding: 5vh 0px;
+}
+
+.strip {
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.strip > img {
+  width: 33px;
+}
+.stripone {
+  animation: move 8s linear infinite;
+}
+.striptwo {
+  animation: move 8s linear infinite reverse;
+}
+
+.strip > h1 {
+  font-size: 9.375vw;
+  display: inline-block;
+  font-family: "poppins", sans-serif;
+  padding-right: 50px;
+  text-align: center;
+  font-weight: 500;
+}
+.strip > img {
+  scale: 2;
+  margin-right: 40px;
+  animation: rrr 4s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(calc(100% - 70px));
+  }
+}
+@keyframes rrr {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(100deg);
+  }
+}
+
+.pagefive {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.pagefive > h1 {
+  font-size: 13vw;
+  font-family: "poppins";
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  left: 160%;
+  font-weight: 400;
+}
+/* Pagesix CSS */
+
+.pagesix {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.pagesix > h1 {
+  font-size: 13vw;
+  font-family: "poppins";
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  right: 160%;
+  font-weight: 400;
+}
+/* page7 css */
+.pageseven {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.pageseven > h1 {
+  font-size: 13vw;
+  font-family: "poppins";
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  left: 160%;
+  font-weight: 400;
+}
+/* page8 css */
+
+.pageeight {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.pageeight > h1 {
+  font-size: 13vw;
+  font-family: "poppins";
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  right: 160%;
+  font-weight: 400;
+}
+/* page9 css */
+.pagenine {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.pagenine > h1 {
+  font-size: 13vw;
+  font-family: "poppins";
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  left: 160%;
+  font-weight: 400;
+}
+/* page ten css */
+.pageten {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.pageten > h1 {
+  font-size: 13vw;
+  font-family: "poppins";
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  right: 160%;
+  font-weight: 400;
+}
+/* page 11 css */
+.pageeleven {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.pageeleven > h1 {
+  font-family: "poppins";
+  font-size: 10px;
+  scale: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* Page12 css */
+.pagetwelve {
+  width: 100vw;
+  height: 650vh;
+  position: relative;
+  background-color: #fff;
+  padding-top: 70px;
+}
+
+.pagetwelve > img {
+  width: 28.64vw;
+  height: 75.34vh;
+  position: relative;
+  perspective: 1000px;
+}
+.imgone {
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 1;
+  top: 10vh;
+}
+.imgtwo {
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 2;
+  top: 150vh;
+}
+.imgthree {
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 3;
+  top: 250vh;
+}
+.imgfour {
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 4;
+  top: 350vh;
+}
+.imgfive {
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 5;
+  top: 450vh;
+}
+/* Page13 */
+
+.pagethirteen > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mask {
+  -webkit-mask-image: url(./symbol.svg);
+  mask-image: url(./symbol.svg);
+  -webkit-mask-size: 31.25vw;
+  z-index: 9999;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+/* Page14 */
+
+.pagefourteen > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.masktwo {
+  -webkit-mask-image: url(./symbol.svg);
+  mask-image: url(./symbol.svg);
+  -webkit-mask-size: 31.25vw;
+  z-index: 9999;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+/* Page15 */
+
+.pagefifteen > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: calc(center);
+}
+.maskthree {
+  -webkit-mask-image: url(./symbol.svg);
+  mask-image: url(./symbol.svg);
+  -webkit-mask-size: 31.25vw;
+  z-index: 9999;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+/* Page16 CSS */
+
+.pagesixteen {
+  background-color: rgb(18, 28, 22);
+}
+.pagesixteen-elem {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border: 1px solid white;
+  border-left: none;
+  border-right: none;
+  position: relative;
+}
+.sneak {
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+.pagesixteen-elem:hover .sneak {
+  height: 100%;
+}
+.pagesixteen-elem:hover .smile {
+  display: none;
+}
+.pagesixteen-elem:hover > h1 {
+  display: none;
+}
+.pagesixteen-elem:hover {
+  justify-content: center;
+}
+.pagesixteen-elem:hover > .profile {
+  scale: 2.5;
+  filter: blur(0px);
+}
+.pagesixteen-elem > h1 {
+  font-family: "poppins", sans-serif;
+  font-size: 6vw;
+  font-weight: 400;
+  mix-blend-mode: difference;
+}
+.profile {
+  width: 8.85vw;
+  height: 18.29vh;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 999;
+  filter: blur(2px);
+}
+.smile {
+  scale: 2;
+  animation: rrr 4s linear infinite;
+  mix-blend-mode: difference;
+}
+
+/* Page Last one */
+.lastpage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+}
+.lastpage > h1 {
+  display: inline-block;
+}
+.lastpage > h1 > span {
+  font-size: 10vw;
+  font-family: "Poppins";
+  display: inline-block;
+  font-weight: 400;
+}
+.smilefirst {
+  position: absolute;
+  scale: 3;
+  top: 40%;
+  left: 42%;
+  z-index: 999;
+  mix-blend-mode: difference;
+  animation: none;
+  rotate: 0deg;
+}
+
+.smilesecond {
+  position: absolute;
+  scale: 3;
+  top: 40%;
+  left: 50%;
+  z-index: 999;
+  mix-blend-mode: difference;
+  animation: none;
+  rotate: 0deg;
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999999;
+  position: fixed;
+}
+#end {
+  scale: 2;
+  fill: #fff;
+}
