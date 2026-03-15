@@ -94,7 +94,7 @@ body {
 .videoinside-overlay > .elem > h1 {
   font-size: 5.625vw;
   color: #fff;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   text-align: center;
   font-weight: 400;
   line-height: 1;
@@ -116,7 +116,7 @@ body {
   align-items: center;
 }
 .pagetwo > .text > h1 {
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 4.16vw;
   font-weight: 400;
   text-align: center;
@@ -126,7 +126,7 @@ body {
 }
 .pagetwo > p {
   font-size: 16px;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   text-align: center;
   width: 40%;
   line-height: 1.7;
@@ -153,7 +153,7 @@ body {
   margin-left: 12px;
 }
 .button {
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   font-size: 11px;
   background-color: transparent;
   border: 1px solid #fff;
@@ -185,7 +185,7 @@ body {
 }
 
 .pagethree > h3 {
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   font-size: 12px;
   font-weight: 900;
 }
@@ -199,7 +199,7 @@ body {
   gap: 2vh;
 }
 .pagethree > .content > h1 {
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 5.104vw;
   font-weight: 400;
   text-align: center;
@@ -252,7 +252,7 @@ body {
 .strip > h1 {
   font-size: 9.375vw;
   display: inline-block;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   padding-right: 50px;
   text-align: center;
   font-weight: 500;
@@ -300,7 +300,7 @@ body {
 
 .pagefive > h1 {
   font-size: 13vw;
-  font-family: "poppins";
+  font-family: 'poppins';
   text-transform: uppercase;
   display: inline-block;
   position: relative;
@@ -320,7 +320,7 @@ body {
 
 .pagesix > h1 {
   font-size: 13vw;
-  font-family: "poppins";
+  font-family: 'poppins';
   text-transform: uppercase;
   display: inline-block;
   position: relative;
@@ -339,7 +339,7 @@ body {
 
 .pageseven > h1 {
   font-size: 13vw;
-  font-family: "poppins";
+  font-family: 'poppins';
   text-transform: uppercase;
   display: inline-block;
   position: relative;
@@ -359,7 +359,7 @@ body {
 
 .pageeight > h1 {
   font-size: 13vw;
-  font-family: "poppins";
+  font-family: 'poppins';
   text-transform: uppercase;
   display: inline-block;
   position: relative;
@@ -378,7 +378,7 @@ body {
 
 .pagenine > h1 {
   font-size: 13vw;
-  font-family: "poppins";
+  font-family: 'poppins';
   text-transform: uppercase;
   display: inline-block;
   position: relative;
@@ -397,7 +397,7 @@ body {
 
 .pageten > h1 {
   font-size: 13vw;
-  font-family: "poppins";
+  font-family: 'poppins';
   text-transform: uppercase;
   display: inline-block;
   position: relative;
@@ -414,7 +414,7 @@ body {
 }
 
 .pageeleven > h1 {
-  font-family: "poppins";
+  font-family: 'poppins';
   font-size: 10px;
   scale: 0;
   text-transform: uppercase;
@@ -561,7 +561,7 @@ body {
   filter: blur(0px);
 }
 .pagesixteen-elem > h1 {
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   font-size: 6vw;
   font-weight: 400;
   mix-blend-mode: difference;
@@ -586,13 +586,14 @@ body {
   align-items: center;
   justify-content: center;
   height: 150vh;
+  padding-bottom: 400px;
 }
 .lastpage > h1 {
   display: inline-block;
 }
 .lastpage > h1 > span {
   font-size: 10vw;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   display: inline-block;
   font-weight: 400;
 }
@@ -631,4 +632,302 @@ body {
 #end {
   scale: 2;
   fill: #fff;
+}
+
+/* ==================== RESPONSIVE DESIGN (Mobile & Tablet Only - UP TO 1024px) ==================== */
+/* Large screens (1025px+) remain UNCHANGED */
+
+@media (max-width: 1024px) {
+  /* Navigation - Responsive */
+  .nav {
+    padding: 12px 3vw;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .nav-left {
+    display: none;
+  }
+
+  .nav-middle {
+    font-size: 14px;
+    gap: 15px;
+  }
+
+  .nav-right {
+    gap: 8px;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  .nav-left > button,
+  .nav-right > button,
+  .button {
+    font-size: 9px;
+    padding: 4px 10px 3px;
+    height: 28px;
+    border-radius: 20px;
+  }
+
+  #switch {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+  }
+
+  #switch svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  /* Page sections */
+  .page {
+    padding-top: 50px;
+    min-height: auto;
+  }
+
+  .pageone > .videoinside {
+    padding: 30px;
+  }
+
+  .pageone > .videoinside > video {
+    border-radius: 15px;
+  }
+
+  .videoinside-overlay > .elem > h1 {
+    font-size: 7vw;
+  }
+
+  /* Page Two */
+  .pagetwo {
+    gap: 3vh;
+    padding: 20px;
+  }
+
+  .pagetwo > .text > h1 {
+    font-size: 5vw;
+    margin: 5px 0;
+  }
+
+  .pagetwo > p {
+    font-size: 14px;
+    width: 85%;
+    line-height: 1.6;
+  }
+
+  .imageone,
+  .imagetwo {
+    width: 45px;
+    height: 55px;
+    margin: 0px 8px;
+  }
+
+  .imagethree {
+    width: 80px;
+    height: 55px;
+  }
+
+  /* Page Three - Show images as static in responsive */
+  .pagethree {
+    gap: 3vh;
+    padding: 20px;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    height: auto;
+  }
+
+  .imageleft,
+  .imageright {
+    position: static !important;
+    width: 85% !important;
+    height: auto !important;
+    margin: 8px auto;
+    display: block;
+    z-index: 1 !important;
+    left: auto !important;
+    right: auto !important;
+    rotate: 0deg !important;
+    order: 0;
+    max-height: 300px;
+  }
+
+  .pagethree > h3 {
+    font-size: 11px;
+    z-index: 10;
+    order: 1;
+    margin: 8px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .pagethree > h3 > svg {
+    margin: 0px 12px;
+  }
+
+  .content {
+    z-index: 10;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vh;
+    width: 100%;
+  }
+
+  .pagethree > .content > h1 {
+    font-size: 4.5vw;
+    margin: 5px 0;
+  }
+
+  .pagethree > .content > button {
+    margin-top: 5px;
+  }
+
+  .pagethreenew {
+    gap: 3vh;
+  }
+
+  .pagethreenew .imageleft,
+  .pagethreenew .imageright {
+    position: static !important;
+    width: 85% !important;
+    height: auto !important;
+    margin: 8px auto;
+    display: block;
+    z-index: 1 !important;
+    rotate: 0deg !important;
+    max-height: 300px;
+  }
+}
+
+/* Page Four */
+.strip > h1 {
+  font-size: 6vw;
+  padding-right: 20px;
+}
+
+.strip > img {
+  width: 22px;
+  margin-right: 20px;
+  scale: 1.2;
+}
+
+/* Pages 5-10 - Static text (no scroll animations) */
+.pagefive,
+.pagesix,
+.pageseven,
+.pageeight,
+.pagenine,
+.pageten {
+  height: 20vh;
+  white-space: normal;
+}
+
+.pagefive > h1,
+.pagesix > h1,
+.pageseven > h1,
+.pageeight > h1,
+.pagenine > h1,
+.pageten > h1 {
+  font-size: 7vw;
+  position: static;
+  left: auto !important;
+  right: auto !important;
+}
+
+/* Page Eleven - Responsive - NO Zoom effect */
+.pageeleven {
+  height: auto;
+  min-height: 25vh;
+  padding: 40px 20px;
+  background-color: rgb(18, 20, 22) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible !important;
+  position: relative;
+  white-space: normal;
+}
+
+.pageeleven > h1 {
+  font-size: 6vw !important;
+  scale: 1 !important;
+  transform: scale(1) !important;
+  line-height: 1.4;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  overflow: visible;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  white-space: normal;
+  display: block;
+}
+
+/* Page Twelve */
+.pagetwelve {
+  width: 100vw;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.pagetwelve > img {
+  width: 70vw;
+  height: auto;
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  transform: translate(0, 0) !important;
+  margin: 30px auto;
+  display: block;
+  z-index: auto !important;
+}
+
+/* Page Sixteen - Responsive */
+.smile {
+  scale: 0.8 !important;
+  animation: none !important;
+}
+
+.profile {
+  width: 7vw;
+  height: 7vw;
+  filter: blur(0px);
+}
+
+.pagesixteen-elem:hover > .profile {
+  scale: 3;
+  filter: blur(0px);
+}
+
+/* Last Page - Responsive */
+.lastpage {
+  height: auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+  padding-bottom: 150px;
+}
+
+.lastpage > h1 > span {
+  font-size: 8vw;
+}
+
+.smilefirst,
+.smilesecond {
+  position: static;
+  scale: 2;
+  margin: 20px 10px;
+  display: inline-block;
+  transform: none !important;
 }
